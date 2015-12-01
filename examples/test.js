@@ -3,6 +3,8 @@ let Awesome = require('../index.js');
 
 let options = {
   repo: 'vinta/awesome-python',
+
+  // token is optional parameter
   token: '<GITHUB AUTH TOKEN>',
 };
 

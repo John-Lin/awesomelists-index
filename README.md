@@ -15,6 +15,7 @@ let Awesome = require('awesomelists-index');
 
 let options = {
   repo: 'vinta/awesome-python',
+  // token is optional parameter
   token: '<GITHUB AUTH TOKEN>',
 };
 
