@@ -22,4 +22,4 @@ py.makeIndexJson((err, res) => {console.log(res);});
 # Related
 
 - [lockys/awesome-search](https://github.com/lockys/awesome-search)
-- https://awesomelists.me/
+- [https://awesomelists.me/](https://awesomelists.me/)
