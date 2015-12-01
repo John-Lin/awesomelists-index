@@ -1,5 +1,7 @@
 'use strict';
-let Awesome = require('../index.js');
-let a = new Awesome('https://raw.githubusercontent.com/vinta/awesome-python/master/README.md');
+let Awesome = require('awesomelists-index');
 
-a.makeIndexJson((err, res) => {console.log(res);});
+// Given a repository name with author ex: vinta/awesome-python
+let py = new Awesome('vinta/awesome-python');
+
+py.makeIndexJson((err, res) => {console.log(res);});
