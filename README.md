@@ -7,12 +7,19 @@ Generate the awesome lists in JSON file.
 npm install awesomelists-index
 ```
 
-# Example
+# Example Usage
 
 ```javascript
 'use strict';
 let Awesome = require('awesomelists-index');
-let a = new Awesome('https://raw.githubusercontent.com/vinta/awesome-python/master/README.md');
 
-a.makeIndexJson((err, res) => {console.log(res);});
+// Given a repository name with author ex: vinta/awesome-python
+let py = new Awesome('vinta/awesome-python');
+
+py.makeIndexJson((err, res) => {console.log(res);});
 ```
+
+# Related
+
+- [lockys/awesome-search](https://github.com/lockys/awesome-search)
+- https://awesomelists.me/
