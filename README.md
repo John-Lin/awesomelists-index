@@ -11,7 +11,7 @@ npm install awesomelists-index
 
 ```javascript
 'use strict';
-let Awesome = require('../index.js');
+let Awesome = require('awesomelists-index');
 let a = new Awesome('https://raw.githubusercontent.com/vinta/awesome-python/master/README.md');
 
 a.makeIndexJson((err, res) => {console.log(res);});
