@@ -1,5 +1,14 @@
 'use strict';
 let Awesome = require('../index.js');
-let a = new Awesome('https://raw.githubusercontent.com/cjwirth/awesome-ios-ui/master/README.md');
 
-a.makeIndexJson((err, res) => {console.log(res);});
+let options = {
+  repo: 'vinta/awesome-python',
+
+  // token is optional parameter
+  token: '<GITHUB AUTH TOKEN>',
+};
+
+// Given a repository name with author ex: vinta/awesome-python
+let py = new Awesome(options);
+
+py.makeIndexJson((err, res) => {console.log(res);});
