@@ -5,7 +5,7 @@ let options = {
   repo: 'matiassingers/awesome-slack',
 
   // token is optional parameter
-  token: require('../token').token,
+  token: process.env.TOKEN || 'GITHUB_TOKEN',
 };
 
 // Given a repository name with author ex: vinta/awesome-python
