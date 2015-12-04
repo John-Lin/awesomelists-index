@@ -1,5 +1,5 @@
 # awesomelists-index
-[![npm version](https://badge.fury.io/js/awesomelists-index.svg)](https://badge.fury.io/js/awesomelists-index)
+![npm version](https://badge.fury.io/js/awesomelists-index.svg)
 
 Generate the awesome lists in JSON file.
 
