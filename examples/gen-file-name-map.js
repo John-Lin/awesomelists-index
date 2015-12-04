@@ -6,7 +6,7 @@
   }
 **/
 
-'use strict'
+'use strict';
 let fs = require('fs');
 let awesomeNameMap = require('../json/awesome-detailed-info.json');
 let fileNameMap = {};
