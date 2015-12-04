@@ -2,7 +2,7 @@
 let Awesome = require('../index.js');
 
 let options = {
-  repo: 'sindresorhus/awesome',
+  repo: 'matiassingers/awesome-slack',
 
   // token is optional parameter
   token: require('../token').token,

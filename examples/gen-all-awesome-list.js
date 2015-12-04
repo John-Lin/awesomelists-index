@@ -3,7 +3,7 @@ let Awesome = require('../index.js');
 let jsonfile = require('jsonfile');
 let fs = require('fs');
 
-let nameMapArray = JSON.parse(fs.readFileSync(`${__dirname}/awesome-name-map.json`, 'utf8'));
+let nameMapArray = JSON.parse(fs.readFileSync('../json/awesome-name-map.json', 'utf8'));
 let opt = {};
 opt.token = require('../token').token;
 for (let i of nameMapArray) {
