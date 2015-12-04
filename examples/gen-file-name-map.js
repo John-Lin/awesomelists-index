@@ -6,8 +6,8 @@
   }
 **/
 
-'use strict'
-let fs = require('fs');
+'use strict';
+let jsonfile = require('jsonfile');
 let awesomeNameMap = require('../json/awesome-detailed-info.json');
 let fileNameMap = {};
 
@@ -15,10 +15,6 @@ for (let e of awesomeNameMap) {
   fileNameMap[e.githubPath] = e.name.replace(/\W/g, '').toLowerCase();
 }
 
-fs.writeFile('../lib/repo-file-name.json', JSON.stringify(fileNameMap, null, 2), (err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log('Success.');
-  }
+jsonfile.writeFile('./repo-file-name.json', fileNameMap, {spaces: 2}, (err) => {
+  console.log('Save to repo-file-name.json');
 });
