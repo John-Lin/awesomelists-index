@@ -8,7 +8,7 @@
 
 'use strict'
 let fs = require('fs');
-let awesomeNameMap = require('../json/awesome-name-map');
+let awesomeNameMap = require('../json/awesome-detailed-info.json');
 let fileNameMap = {};
 
 for (let e of awesomeNameMap) {
