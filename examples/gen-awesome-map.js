@@ -8,11 +8,9 @@
 **/
 
 'use strict';
-let Awesome = require('../index.js');
 let jsonfile = require('jsonfile');
-let fs = require('fs');
 
-let nameMapArray = JSON.parse(fs.readFileSync('../json/awesome.json', 'utf8'));
+let nameMapArray = jsonfile.readFileSync('../json/awesome.json');
 
 for (let i of nameMapArray) {
   let maintainer = i.url.split('/')[3];
@@ -20,10 +18,6 @@ for (let i of nameMapArray) {
   i.githubPath = maintainer ? `${maintainer}/${repoName}` : null;
 }
 
-fs.writeFile('./awesome-detailed-info.json', JSON.stringify(nameMapArray, null, 2), (err) => {
-  if (err) {
-    console.error(new Error('Failed to write.'));
-  } else {
-    console.log('Success!');
-  }
+jsonfile.writeFile('./awesome-detailed-info.json', nameMapArray, {spaces: 2}, (err) => {
+  console.log('Save to awesome-detailed-info.json');
 });
