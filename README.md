@@ -1,4 +1,6 @@
 # awesomelists-index
+[![npm version](https://badge.fury.io/js/awesomelists-index.svg)](https://badge.fury.io/js/awesomelists-index)
+
 Generate the awesome lists in JSON file.
 
 # Installation
@@ -14,16 +16,15 @@ npm install awesomelists-index
 let Awesome = require('awesomelists-index');
 
 let options = {
-  repo: 'vinta/awesome-python',
+  repo: 'matiassingers/awesome-slack',
   // token is optional parameter
-  token: '<GITHUB AUTH TOKEN>',
+  token: process.env.TOKEN || 'GITHUB_TOKEN',
 };
 
 // Given a repository name with author ex: vinta/awesome-python
 let py = new Awesome(options);
 
 py.makeIndexJson((err, res) => {console.log(res);});
-
 ```
 
 # Related
