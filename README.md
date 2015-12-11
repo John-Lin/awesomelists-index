@@ -6,7 +6,12 @@ Generate the awesome lists in JSON file.
 # Installation
 
 ```sh
-npm install awesomelists-index
+$ npm install awesomelists-index
+```
+
+You can set github token without passing it every time
+```sh
+$ echo export TOKENS="Your-Github-Token" >> ~/.bash_profile && source ~/.bash_profile
 ```
 
 # Example Usage
@@ -25,6 +30,10 @@ let options = {
 let py = new Awesome(options);
 
 py.makeIndexJson((err, res) => {console.log(res);});
+```
+**Run with given github token**
+```sh
+$ TOKENS="Your-Github-Token" node examples/simple.js
 ```
 
 # Related
