@@ -11,7 +11,7 @@ $ npm install awesomelists-index
 
 Set github token.
 ```sh
-$ echo export TOKENS="Your Github Token" >> ~/.bash_profile
+$ echo export TOKENS="Your-Github-Token" >> ~/.bash_profile && source ~/.bash_profile
 ```
 
 # Example Usage
