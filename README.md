@@ -6,7 +6,12 @@ Generate the awesome lists in JSON file.
 # Installation
 
 ```sh
-npm install awesomelists-index
+$ npm install awesomelists-index
+```
+
+Set github token.
+```sh
+$ echo export TOKENS="Your Github Token" >> ~/.bash_profile
 ```
 
 # Example Usage
