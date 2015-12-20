@@ -676,11 +676,6 @@
     "githubPath": "dreikanter/sublime-bookmarks"
   },
   {
-    "name": "Vim",
-    "url": "http://vimawesome.com",
-    "githubPath": "undefined/undefined"
-  },
-  {
     "name": "Emacs",
     "url": "https://github.com/emacs-tw/awesome-emacs",
     "githubPath": "emacs-tw/awesome-emacs"
